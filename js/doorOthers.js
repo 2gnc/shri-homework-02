@@ -83,8 +83,8 @@ function Door1(number, onUnlock) {
 
     slider.addEventListener('pointerdown', _onPointerDown.bind(this));
     slider.addEventListener('pointermove', _onPointerMove.bind(this));
-    slider.addEventListener('pointerup', _onPointerUp.bind(this));
-    slider.addEventListener('pointercancel', _onPointerUp.bind(this));
+    //slider.addEventListener('pointerup', _onPointerUp.bind(this));
+    //slider.addEventListener('pointercancel', _onPointerUp.bind(this));
     slider.addEventListener('pointerleave', _onPointerUp.bind(this));
 
 
