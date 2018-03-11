@@ -66,12 +66,23 @@ function Door1(number, onUnlock) {
     var slider = this.popup.querySelector('.door-riddle__arr');
     // дверь откроется при свайпе по красному прямоугольнику
 
+    function _onPointerDown( e ) {
+        slider.setPointerCapture( e.pointerId );
+    }
+
     function _onPointerMove( e ) {
         e.target.classList.add('door-riddle__arr_ok');
         checkCondition.apply(this);
     }
 
-    slider.addEventListener('pointerdown', _onPointerMove.bind(this));
+    function _onPointerUp( e ) {
+        slider.msReleasePointerCapture( e.pointerId );
+        checkCondition.apply(this);
+    }
+
+    slider.addEventListener('pointerdown', _onPointerDown.bind(this));
+    slider.addEventListener('pointermove', _onPointerMove.bind(this));
+    slider.addEventListener('pointerup', _onPointerUp.bind(this));
 
     // если пользователь зажег все элементы
     function checkCondition() {
