@@ -85,15 +85,11 @@ function Door1(number, onUnlock) {
 
 
     function checkCondition() {
-        var isOpened = true;
 
         if (slider.classList.contains('door-riddle__arr_ok')) {
-            isOpened = false;
-        }
-
-        if (isOpened) {
             this.unlock();
         }
+
     }
 
 
