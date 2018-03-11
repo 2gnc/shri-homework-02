@@ -67,6 +67,8 @@ function Door1(number, onUnlock) {
     this.popup.addEventListener('click', function() {
         this.unlock();
     }.bind(this));
+
+
     // ==== END Напишите свой код для открытия второй двери здесь ====
 }
 Door1.prototype = Object.create(DoorBase.prototype);
