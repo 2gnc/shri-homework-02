@@ -184,3 +184,9 @@ body {
 .door-riddle__button_pressed {
     background-color: #F3E5D9;
 }
+
+.door-riddle__arr {
+    width: 50%;
+    height: 64px;
+    background-color: red;
+}
