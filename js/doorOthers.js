@@ -84,7 +84,7 @@ function Door1(number, onUnlock) {
 
 
     function checkCondition() {
-        alert('проверка условия');
+        //alert('проверка условия');
         if (slider.classList.contains('door-riddle__arr_ok')) {
             this.unlock();
         }
