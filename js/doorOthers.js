@@ -77,7 +77,7 @@ function Door1(number, onUnlock) {
     }
 
     function _onPointerUp( e ) {
-        slider.msReleasePointerCapture( e.pointerId );
+        slider.releasePointerCapture( e.pointerId );
         alert('pointer up');
         checkCondition.apply(this);
     }
