@@ -93,7 +93,7 @@ function Door1(number, onUnlock) {
 
 
         // Если ok, то откроем эту дверь
-        if (!isOpened) {
+        if (isOpened) {
             this.unlock();
         }
     }
