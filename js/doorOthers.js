@@ -71,7 +71,7 @@ function Door1(number, onUnlock) {
         checkCondition.apply(this);
     }
 
-    slider.addEventListener('pointermove', _onPointerMove.bind(this));
+    slider.addEventListener('pointerdown', _onPointerMove.bind(this));
 
     // если пользователь зажег все элементы
     function checkCondition() {
