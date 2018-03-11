@@ -67,7 +67,7 @@ function Door1(number, onUnlock) {
     // дверь откроется при свайпе по красному прямоугольнику
 
     function _onPointerDown( e ) {
-        //slider.setPointerCapture( e.pointerId );
+        //заготовка
     }
 
     function _onPointerMove( e ) {
@@ -84,18 +84,10 @@ function Door1(number, onUnlock) {
 
 
     function checkCondition() {
-        //alert('проверка условия');
         if (slider.classList.contains('door-riddle__arr_ok')) {
             this.unlock();
         }
-
     }
-
-
-    // Для примера дверь откроется просто по клику на неё
-    // this.popup.addEventListener('click', function() {
-    //     this.unlock();
-    // }.bind(this));
 
 
     // ==== END Напишите свой код для открытия второй двери здесь ====
