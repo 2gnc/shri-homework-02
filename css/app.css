@@ -188,7 +188,7 @@ body {
 .door-riddle__arr {
     width: 50%;
     height: 64px;
-    outline: 1px solid fuchsia;
+    outline: 1px solid orange;
 }
 
 .door-riddle__arr_ok {
