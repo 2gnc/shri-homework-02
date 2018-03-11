@@ -190,3 +190,7 @@ body {
     height: 64px;
     outline: 1px solid red;
 }
+
+door-riddle__arr_ok {
+    outline: 1px solid lime;
+}
