@@ -72,13 +72,10 @@ function Door1(number, onUnlock) {
 
     function _onPointerMove( e ) {
         e.target.classList.add('door-riddle__arr_ok');
-        alert('pointer up');
-        //checkCondition.apply(this);
     }
 
     function _onPointerUp( e ) {
         slider.releasePointerCapture( e.pointerId );
-
         checkCondition.apply(this);
     }
 
@@ -96,7 +93,7 @@ function Door1(number, onUnlock) {
 
 
         // Если ok, то откроем эту дверь
-        if (isOpened) {
+        if (!isOpened) {
             this.unlock();
         }
     }
