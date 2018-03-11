@@ -63,10 +63,18 @@ function Door1(number, onUnlock) {
     DoorBase.apply(this, arguments);
 
     // ==== Напишите свой код для открытия второй двери здесь ====
+    var slider = this.popup.querySelector('.door-riddle__arr');
+    // дверь откроется при свайпе по красному прямоугольнику
+
+    // если пользователь зажег все элементы
+    function checkCondition() {
+    }
+
+
     // Для примера дверь откроется просто по клику на неё
-    this.popup.addEventListener('click', function() {
-        this.unlock();
-    }.bind(this));
+    // this.popup.addEventListener('click', function() {
+    //     this.unlock();
+    // }.bind(this));
 
 
     // ==== END Напишите свой код для открытия второй двери здесь ====
