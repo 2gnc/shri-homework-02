@@ -67,25 +67,20 @@ function Door1(number, onUnlock) {
     // дверь откроется при свайпе по красному прямоугольнику
 
     function _onPointerDown( e ) {
-        slider.setPointerCapture( e.pointerId );
+        //slider.setPointerCapture( e.pointerId );
     }
 
     function _onPointerMove( e ) {
         e.target.classList.add('door-riddle__arr_ok');
-        //checkCondition.apply(this);
     }
 
     function _onPointerUp( e ) {
-        //alert(1);
-        //slider.releasePointerCapture( e.pointerId );
         checkCondition.apply(this);
     }
 
     slider.addEventListener('pointerdown', _onPointerDown.bind(this));
     slider.addEventListener('pointermove', _onPointerMove.bind(this));
     slider.addEventListener('pointerup', _onPointerUp.bind(this));
-    //slider.addEventListener('pointercancel', _onPointerUp.bind(this));
-    //slider.addEventListener('pointerleave', _onPointerUp.bind(this));
 
 
     function checkCondition() {
