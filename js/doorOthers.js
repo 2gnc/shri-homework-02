@@ -83,16 +83,14 @@ function Door1(number, onUnlock) {
     slider.addEventListener('pointermove', _onPointerMove.bind(this));
     slider.addEventListener('pointerup', _onPointerUp.bind(this));
 
-    // если пользователь зажег все элементы
+
     function checkCondition() {
-        var isOpened = false;
+        var isOpened = true;
 
         if (slider.classList.contains('door-riddle__arr_ok')) {
-            isOpened = true;
+            isOpened = false;
         }
 
-
-        // Если ok, то откроем эту дверь
         if (isOpened) {
             this.unlock();
         }
