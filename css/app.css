@@ -191,6 +191,6 @@ body {
     outline: 1px solid fuchsia;
 }
 
-door-riddle__arr_ok {
+.door-riddle__arr_ok {
     outline: 1px solid lime;
 }
